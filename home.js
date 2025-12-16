@@ -35,7 +35,7 @@ downloadBtn.addEventListener("click", () => {
 
     let link = document.createElement("a");
     link.href = img.src;
-    link.download = "qr-code.png";
+    link.download = "Unity_Qr_Gen.png";
     link.click();
 });
 
