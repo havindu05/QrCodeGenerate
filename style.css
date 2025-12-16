@@ -6,17 +6,20 @@
 }
 
 body{
-    background: #0e3d599d;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #1f4037, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .container{
     width: 400px;
     padding: 25px 35px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .container p{
@@ -24,4 +27,65 @@ body{
     font-weight: 600;
     margin-bottom: 15px;
     color: #333;
+}
+
+.container input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container button{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #0e3d59;
+    border: none;
+    border-radius: 5px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background: #0e8dd2;
+}
+
+#qrcode{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#download-btn{
+    background: #2d8f4e;
+}
+
+#download-btn:hover{
+    background: #1e6f3a;
+}
+
+#clear-btn{
+    background: #b02a37;
+}
+
+#clear-btn:hover{
+    background: #8b1f2a;
+}
+
+small{
+    display: block;
+    margin-top: 10px;
+    color: red;
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 90%;
+        padding: 20px;
+    }
 }
